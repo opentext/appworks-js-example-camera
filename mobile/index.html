@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>AWCamera Demo</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="appworks.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body>
+
+    <div id="intro-wrapper">
+      <div id="intro">
+        <div style="font-weight:bold; text-align:center; margin-bottom:8px;">AppWorks AWCamera Demo</div>
+        <p>This demo app demostrates the use of the Appworks.AWCamera class</P>
+        <p><b>Take Picture</b> will open the camera to take a picture</p>
+        <p><b>Open Gallery</b> will open the device gallery to get a picture</p>
+        <p><b>Cleaup</b> will clear the temp directory</p>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      <div><button type="button" id="go0-button" class="go-button vertical-space" onclick="takePicture();">Take Picture</button></div>
+      <div><button type="button" id="go1-button" class="go-button vertical-space" onclick="openGallery();">Open Gallery</button></div>
+      <div><button type="button" id="go2-button" class="go-button vertical-space" onclick="cleanup();">Cleanup</button></div>
+    </div>
+
+    <div id="result-wrapper">
+      <div id="result">
+        Result will appear here.
+      </div>
+    </div>
+
+    <div id="version">Version 0.0.1</div>
+  </body>
+</html>
